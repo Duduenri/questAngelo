@@ -26,7 +26,12 @@ while(true){
     
         case 2:
             criaVeiculo()
-    }
+            break;
+
+            case 3:
+                subirMarcha(carro);
+                break;
+        }
 }
 
 console.table(carro);
@@ -44,4 +49,13 @@ function criaVeiculo(): Veiculo{
     veiculo.potencia = +teclado('Potência: ');
     veiculo.numeroMarchas = +teclado('Número de marchas: ');
     return veiculo;
+}
+
+function subirMarcha(veiculo: Veiculo): void {
+    if (veiculo.marchaAtual < veiculo.numeroMarchas) {
+        veiculo.marchaAtual++;
+        console.log(`Marcha atual: ${veiculo.marchaAtual}`);
+    } else {
+        console.log('Você já está na marcha máxima!');
+    }
 }
