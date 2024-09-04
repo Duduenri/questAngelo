@@ -9,7 +9,7 @@ const carro: Veiculo = criaVeiculo();
 while(true){
     console.log("########### MENU ###########");
     console.log("1 - Acelerar");
-    console.log("2 - Frear");
+    console.log("2 - Criar veiculo");
     console.log("3 - Subir marcha");
     console.log("4 - Descer marcha");
     console.log("5 - Imprimir dados do veículo");
@@ -24,7 +24,7 @@ while(true){
             acelerar(carro);
             break;
     
-        default:
+        case 2:
             criaVeiculo()
     }
 }
