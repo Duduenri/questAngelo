@@ -25,7 +25,7 @@ while(true){
             break;
     
         default:
-            break;
+            criaVeiculo()
     }
 }
 
@@ -45,5 +45,3 @@ function criaVeiculo(): Veiculo{
     veiculo.numeroMarchas = +teclado('Número de marchas: ');
     return veiculo;
 }
-
-
